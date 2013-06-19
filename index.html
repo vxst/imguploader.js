@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Imguploader.js : Client-side Image Upload&amp;Compress&amp;Show" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Imguploader.js</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/vxst/imguploader.js">View on GitHub</a>
+
+          <h1 id="project_title">Imguploader.js</h1>
+          <h2 id="project_tagline">Client-side Image Upload&amp;Compress&amp;Show</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/vxst/imguploader.js/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/vxst/imguploader.js/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="imguploaderjs" class="anchor" href="#imguploaderjs"><span class="octicon octicon-link"></span></a>imguploader.js</h1>
+
+<p>imguploader.js is all you need to upload an image to broswer and show it to users!</p>
+
+<p>A client side js script to upload an image, compress it, transform it to Data URI, or to an image element</p>
+
+<h2>
+<a name="function-list" class="anchor" href="#function-list"><span class="octicon octicon-link"></span></a>function list</h2>
+
+<h3>
+<a name="function-compressimgtourlimgmaxwidthmaxheightcb" class="anchor" href="#function-compressimgtourlimgmaxwidthmaxheightcb"><span class="octicon octicon-link"></span></a>function compressimgtourl(img,maxwidth,maxheight,cb)</h3>
+
+<ul>
+<li>img: a HTML Image Object</li>
+<li>maxwidth, maxheight: the max size of image it should compress to</li>
+<li>cb: function(dataurl)</li>
+</ul><p>Compress an big image object to a smaller one and return DataURI</p>
+
+<h3>
+<a name="function-fileuploadurlfilemaxwidthmaxheightcallback" class="anchor" href="#function-fileuploadurlfilemaxwidthmaxheightcallback"><span class="octicon octicon-link"></span></a>function fileuploadurl(file,maxwidth,maxheight,callback)</h3>
+
+<ul>
+<li>file: a HTML File Object</li>
+<li>maxwidth, maxheight: the max size of image it should compress to</li>
+<li>callback: function(dataurl)</li>
+</ul><p>Upload an file and compress it to a smaller one. Return DataURI when finished.</p>
+
+<h3>
+<a name="function-fileuploadimgfilemaxwidthmaxheightcallback" class="anchor" href="#function-fileuploadimgfilemaxwidthmaxheightcallback"><span class="octicon octicon-link"></span></a>function fileuploadimg(file,maxwidth,maxheight,callback)</h3>
+
+<ul>
+<li>file: a HTML File Object</li>
+<li>maxwidth, maxheight: the max size of image it should compress to</li>
+<li>callback: function(img)</li>
+</ul><p>Upload an file and compress it to a smaller one. Return Image Object when finished.</p>
+
+<h2>
+<a name="sample-code" class="anchor" href="#sample-code"><span class="octicon octicon-link"></span></a>Sample code</h2>
+
+<pre><code>fileuploadimg(document.getElementById('input').files,
+    function(img){
+        document.getElementsByTagName('body')[0].appendChild(img);
+    }
+);
+</code></pre>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Imguploader.js maintained by <a href="https://github.com/vxst">vxst</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
