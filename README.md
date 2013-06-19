@@ -6,8 +6,9 @@ A client side js script to upload an image, compress it, transform it to Data UR
 
 ##function list
 
-###function compressimgtobase64([HTML Image DOM Object],maxwidth,maxheight,callback)
+###function compressimgtobase64(img,maxwidth,maxheight,callback)
 
+ * img: a HTML Image Object
  * maxwidth, maxheight: the max size of image it should compress to
  * callback: function(dataurl)
 
