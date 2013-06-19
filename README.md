@@ -32,9 +32,9 @@ Upload an file and compress it to a smaller one. Return Image Object when finish
 
 ##Sample code
 
-fileuploadimg(document.getElementById('input').files,
-	function(img){
-		document.getElementsByTagName('body')[0].appendChild(img);
-	}
-);
+    fileuploadimg(document.getElementById('input').files,
+    	function(img){
+    		document.getElementsByTagName('body')[0].appendChild(img);
+    	}
+    );
 
