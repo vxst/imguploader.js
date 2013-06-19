@@ -1,4 +1,3 @@
-#Image Upload&Compress:
 #imguploader.js
 
 imguploader.js is all you need to upload an image to broswer and show it to users!
