@@ -1,4 +1,4 @@
-#imguploader.js
+#<a href='http://vxst.github.io/imguploader.js'>imguploader.js</a>
 
 imguploader.js is all you need to upload an image to broswer and show it to users!
 
