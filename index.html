@@ -32,7 +32,8 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h1>
-<a name="imguploaderjs" class="anchor" href="#imguploaderjs"><span class="octicon octicon-link"></span></a>imguploader.js</h1>
+<a name="imguploaderjs" class="anchor" href="#imguploaderjs"><span class="octicon octicon-link"></span></a><a href="http://vxst.github.io/imguploader.js">imguploader.js</a>
+</h1>
 
 <p>imguploader.js is all you need to upload an image to broswer and show it to users!</p>
 
@@ -42,12 +43,12 @@
 <a name="function-list" class="anchor" href="#function-list"><span class="octicon octicon-link"></span></a>function list</h2>
 
 <h3>
-<a name="function-compressimgtourlimgmaxwidthmaxheightcb" class="anchor" href="#function-compressimgtourlimgmaxwidthmaxheightcb"><span class="octicon octicon-link"></span></a>function compressimgtourl(img,maxwidth,maxheight,cb)</h3>
+<a name="function-compressimgtourlimgmaxwidthmaxheightcallback" class="anchor" href="#function-compressimgtourlimgmaxwidthmaxheightcallback"><span class="octicon octicon-link"></span></a>function compressimgtourl(img,maxwidth,maxheight,callback)</h3>
 
 <ul>
 <li>img: a HTML Image Object</li>
 <li>maxwidth, maxheight: the max size of image it should compress to</li>
-<li>cb: function(dataurl)</li>
+<li>callback: function(dataurl)</li>
 </ul><p>Compress an big image object to a smaller one and return DataURI</p>
 
 <h3>
@@ -71,7 +72,7 @@
 <h2>
 <a name="sample-code" class="anchor" href="#sample-code"><span class="octicon octicon-link"></span></a>Sample code</h2>
 
-<pre><code>fileuploadimg(document.getElementById('input').files,
+<pre><code>fileuploadimg(document.getElementById('input').files,500,500,
     function(img){
         document.getElementsByTagName('body')[0].appendChild(img);
     }
