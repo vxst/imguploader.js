@@ -1,9 +1,9 @@
 <html>
 <head>
 <title>Imguploader.js Example</title>
-<script src='imgupload.js'></script>
+<script src='imguploader.js'></script>
 </head>
 <body>
-<input type="file" name="upload" onchange="fileuploadimg(this.files,function(img){function(){document.getElementsByTagName('body')[0].appendChild(img)}});"/>
+<input type="file" name="upload" onchange="fileuploadimg(this.files,800,600,function(img){document.getElementsByTagName('body')[0].appendChild(img)});"/>
 </body>
 </html>

@@ -1,4 +1,4 @@
-function compressimgtobase64(img,maxwidth,maxheight,callback){
+function compressimgtourl(img,maxwidth,maxheight,callback){
 	var twidth=img.width,theight=img.height;
 	if(twidth>maxwidth){
 		twidth=maxwidth;theight=twidth*img.height/img.width;
@@ -23,7 +23,7 @@ function fileuploadurl(file,maxwidth,maxheight,callback){
 		var img=new Image();
 		img.src=e.target.result;
 		img.onload=function(){
-			compressimgtobase64(img,maxwidth,maxheight,function(txt){
+			compressimgtourl(img,maxwidth,maxheight,function(txt){
 				callback(txt);
 			});
 		}
@@ -31,7 +31,7 @@ function fileuploadurl(file,maxwidth,maxheight,callback){
 }
 function fileuploadimg(file,maxwidth,maxheight,callback){
 	fileuploadurl(file,maxwidth,maxheight,function(txt){
-		var img=Image();
+		var img=new Image();
 		img.src=txt;
 		img.onload=function(){
 			callback(img);
